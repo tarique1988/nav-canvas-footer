@@ -6,22 +6,22 @@ function Header() {
 			</div>
 			<nav className="flex flex-row justify-between items-center text-white h-full gap-2 mx-4">
 				<a href="#" className="h-full">
-					<div className="flex flex-row justify-center items-center hover:bg-blue-400 h-full px-4">
+					<div className="flex flex-row justify-center items-center h-full px-4 hover:bg-blue-400 hover:text-gray-900">
 						Home
 					</div>
 				</a>
 				<a href="#" className="h-full">
-					<div className="flex flex-row justify-center items-center hover:bg-blue-400 h-full px-4">
+					<div className="flex flex-row justify-center items-center h-full px-4 hover:bg-blue-400 hover:text-gray-900">
 						About
 					</div>
 				</a>
 				<a href="#" className="h-full">
-					<div className="flex flex-row justify-center items-center hover:bg-blue-400 h-full px-4">
+					<div className="flex flex-row justify-center items-center h-full px-4 hover:bg-blue-400 hover:text-gray-900">
 						Contact
 					</div>
 				</a>
 				<a href="#" className="h-full">
-					<div className="flex flex-row justify-center items-center hover:bg-blue-400 h-full px-4">
+					<div className="flex flex-row justify-center items-center h-full px-4 hover:bg-blue-400 hover:text-gray-900">
 						Projects
 					</div>
 				</a>
