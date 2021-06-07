@@ -1,7 +1,7 @@
 import Footer from "./Footer";
 import Header from "./Header";
 import Head from "next/head";
-import { useRef, useEffect } from "react";
+import Canvas from "./Canvas";
 import { useWindowResize } from "../hooks/windowResize";
 
 const Layout = () => {
@@ -19,10 +19,7 @@ const Layout = () => {
 			</Head>
 			<div className="flex flex-col" style={{ width, height }}>
 				<Header height={48} width />
-				<canvas
-					className="bg-blue-200"
-					style={{ width, height: height - 48 - 36, minHeight: 400 }}
-				></canvas>
+				<Canvas width height={height - 48 - 36} minHeight={400} />
 				<Footer width height={36} />
 			</div>
 		</>
