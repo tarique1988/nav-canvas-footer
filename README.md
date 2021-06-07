@@ -2,6 +2,9 @@
 title: "Read Me"
 author: "Tarique Ali Mirza <tarique1988@gmail.com"
 date: "7th Day of June, 2021"
+output:
+  html_document:
+    self_contained: yes
 ---
 
 This is a template repository that has a responsive Navigation, Footer, and a canvas element filling everything in between.
