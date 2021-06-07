@@ -1,8 +1,12 @@
 import Footer from "./Footer";
 import Header from "./Header";
 import Head from "next/head";
+import { useRef, useEffect } from "react";
+import { useWindowResize } from "../hooks/windowResize";
 
-const Layout = ({ children }) => {
+const Layout = () => {
+	const { width, height } = useWindowResize();
+
 	return (
 		<>
 			<Head>
@@ -13,10 +17,13 @@ const Layout = ({ children }) => {
 				/>
 				<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 			</Head>
-			<div className="flex flex-col justify-between min-h-screen">
-				<Header />
-				{children}
-				<Footer />
+			<div className="flex flex-col" style={{ width, height }}>
+				<Header height={48} width />
+				<canvas
+					className="bg-blue-200"
+					style={{ width, height: height - 48 - 36, minHeight: 400 }}
+				></canvas>
+				<Footer width height={36} />
 			</div>
 		</>
 	);

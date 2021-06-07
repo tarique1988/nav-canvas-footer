@@ -1,6 +1,6 @@
-const Footer = () => {
+const Footer = ({ height, width }) => {
 	return (
-		<footer className="bg-gray-700 w-screen">
+		<footer className="flex-none bg-gray-700" style={{ width, height }}>
 			<h1 className="text-center text-sm text-gray-50 py-2 align-baseline">
 				Powered by{" "}
 				<a href="https://github.com/tarique1988" className="font-bold">
